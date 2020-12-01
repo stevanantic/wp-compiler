@@ -1,0 +1,44 @@
+{
+	"autoprefixerBrowsers": [
+		"last 2 versions",
+		"> 5%"
+	],
+	"gzip_options": {
+		"threshold": "1kb",
+		"gzipOptions": {
+			"level": 9
+		}
+	},
+	"sourcePaths": {
+		"root": "wp-content/themes/zdra/src/",
+		"scss": "wp-content/themes/zdra/src/scss/**/*.scss",
+		"js": [
+			"wp-content/themes/zdra/src/js/main.js",
+			"wp-content/themes/zdra/src/js/*.js"
+		],
+		"php": [
+			"wp-content/themes/zdra/**/*.php"
+		],
+		"images": [
+			"wp-content/themes/zdra/src/images/**/*.{jpg,jpeg,png,gif}"
+		],
+		"svg": [
+			"wp-content/themes/zdra/src/images/*.svg"
+		]
+	},
+	"deployPaths": {
+		"root": "wp-content/themes/zdra/dist/",
+		"scss": "wp-content/themes/zdra/dist/css",
+		"js": "wp-content/themes/zdra/dist/js",
+		"images": "wp-content/themes/zdra/dist/images",
+		"svg": "wp-content/themes/zdra/dist/images/svg"
+	},
+	"deployFiles": {
+		"scss": "app.css",
+		"js": "app.js"
+	},
+	"cleanFiles": [
+		"wp-content/themes/zdra/dist/css/"
+	],
+	"proxy": "http://localhost:8888/vipay/"
+}
